@@ -21,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <!-- ISI 1 — judul tab dan hasil pencarian. Ganti dengan nama Anda. -->
-  <title>Profil Nama Anda — PABW 2026/2027</title>
+  <title>Profil Nabil Farrely — PABW 2026/2027</title>
   <meta name="description" content="Halaman profil mahasiswa PABW: tentang saya, karya, dan kontak.">
 
   <!-- LEMBAR D — buat lima berkas di folder css/, lalu buka komentar ini.
@@ -38,9 +38,9 @@
 
   <header class="kepala">
     <!-- ISI 2 — nama Anda, atau nama panggilan yang Anda pakai. -->
-    <h1>Nama Anda</h1>
+    <h1>Nabil Farrely</h1>
     <!-- ISI 3 — satu kalimat tentang diri Anda. -->
-    <p class="tagline">Mahasiswa Informatika yang sedang belajar membangun web.</p>
+    <p class="tagline">Mahasiswa Informatika semester 3 yang sedang mempelajari pengembangan website.</p>
     <nav aria-label="Navigasi utama">
       <ul>
         <li><a href="#tentang">Tentang</a></li>
@@ -59,20 +59,20 @@
         <!-- ISI 4 — pakai foto Anda sendiri dengan nama berkas yang sama,
              atau biarkan berkas contoh apa adanya. -->
         <img src="media/foto-profil.jpg"
-             alt="Foto diri Nama Anda memakai kemeja putih."
+             alt="Foto diri Nabil Farrely memakai kemeja putih."
              width="480" height="480" loading="lazy">
         <figcaption>Foto profil — ganti dengan milik Anda sendiri.</figcaption>
       </figure>
 
       <!-- ISI 5 — dua sampai tiga kalimat: asal, minat, dan hal yang
            sedang Anda pelajari. -->
-      <p>Saya mahasiswa Program Studi Informatika Universitas Islam Indonesia.
-         Saya tertarik pada pengembangan web, khususnya bagian tampilan,
-         karena di sana keputusan teknis langsung terlihat hasilnya.</p>
+      <p>Saya Nabil Farrely, mahasiswa Informatika Universitas Islam Indonesia.
+         Saya tertarik mempelajari pengembangan web, terutama cara membuat tampilan yang konsisten,
+         mudah dirawat, dan nyaman dipakai pada berbagai ukuran layar.</p>
 
       <table>
         <!-- ISI 6 — judul tabel dan isi minimal tiga baris. -->
-        <caption>Kegiatan yang saya ikuti semester ini</caption>
+        <caption>Kegiatan belajar yang saya ikuti semester ini</caption>
         <thead>
           <tr>
             <th scope="col">Kegiatan</th>
@@ -87,13 +87,13 @@
             <td><time datetime="2026-09">September 2026</time></td>
           </tr>
           <tr>
-            <th scope="row">Kelas Terbuka Kampus</th>
+            <th scope="row">Belajar HTML dan CSS</th>
             <td>Peserta</td>
             <td><time datetime="2026-10">Oktober 2026</time></td>
           </tr>
           <tr>
-            <th scope="row">Organisasi kemahasiswaan</th>
-            <td>Anggota</td>
+            <th scope="row">Belajar Sistem dan Jaringan Komputer</th>
+            <td>Peserta</td>
             <td><time datetime="2026">2026</time></td>
           </tr>
         </tbody>
@@ -106,8 +106,8 @@
            Boleh tugas kuliah, karya pribadi, atau hobi. -->
       <ul>
         <li>Halaman Kelas Terbuka Kampus — praktikum P03, HTML semantik dan form.</li>
-        <li>Karya kedua Anda — sebutkan apa dan tahunnya.</li>
-        <li>Karya ketiga Anda — sebutkan apa dan tahunnya.</li>
+        <li>Proyek aplikasi kampus — tugas pengembangan aplikasi dalam perkuliahan.</li>
+        <li>Makalah kuliah - tugas penulisan dan penyusunan materi perkuliahan.</li>
       </ul>
     </section>
 
@@ -154,11 +154,49 @@
          yang belum terpakai, elemen semantik yang berbeda satu sama lain, dan
          gaya memakai token yang sama. Tiga section di atas JANGAN diubah. -->
 
+    <section id="tanya-jawab">
+      <h2>Tanya jawab</h2>
+      <details>
+        <summary>Apa yang sedang saya pelajari?</summary>
+        <p>CSS dan cara menyusun tampilan yang konsisten melalui design token.</p>
+      </details>
+      <details>
+        <summary>Alat apa yang saya gunakan saat belajar?</summary>
+        <p>Editor kode, peramban, dan DevTools untuk memeriksa struktur serta tampilan halaman.</p>
+      </details>
+    </section>
+
+    <section id="perjalanan">
+      <h2>Perjalanan saya</h2>
+      <ol class="lini">
+        <li><time datetime="2025-09">September 2025</time> — memulai studi Informatika di UII.</li>
+        <li><time datetime="2025-09">September 2025</time> — mulai mempelajari bahasa pemrograman Python hingga akhir tahun.</li>
+        <li><time datetime="2026-01">Februari 2026</time> — mulai mempelajari bahasa pemrograman Java hingga Agustus 2026.</li>
+        <li><time datetime="2026-09">September 2026</time> — mulai mempelajari HTML dan CSS dalam perkuliahan PABW.</li>
+      </ol>
+    </section>
+
+    <section id="keterampilan">
+      <h2>Keterampilan</h2>
+      <dl class="keterampilan">
+        <dt>Python</dt>
+        <dd>Mempelajari dasar pemrograman menggunakan bahasa Python.</dd>
+
+        <dt>Java</dt>
+        <dd>Mempelajari pemrograman Java dan menggunakannya dalam tugas perkuliahan.</dd>
+
+        <dt>HTML dan CSS</dt>
+        <dd>Mempelajari struktur HTML semantik, styling CSS, layout, dan design token.</dd>
+
+        <dt>UI/UX</dt>
+        <dd>Mempelajari perancangan antarmuka dan membuat prototype menggunakan Figma.</dd>
+      </dl>
+    </section>
   </main>
 
   <footer class="kaki">
     <!-- ISI 9 — nama, NIM, tahun. -->
-    <p>Nama Anda · 105230102 · <time datetime="2026">2026</time></p>
+    <p>Nabil Farrely · 25523145 · <time datetime="2026">2026</time></p>
   </footer>
 </body>
 </html>
