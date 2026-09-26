@@ -37,17 +37,19 @@
   <a class="lewati" href="#utama">Lewati ke konten utama</a>
 
   <header class="kepala">
-    <!-- ISI 2 — nama Anda, atau nama panggilan yang Anda pakai. -->
-    <h1>Nabil Farrely</h1>
-    <!-- ISI 3 — satu kalimat tentang diri Anda. -->
-    <p class="tagline">Mahasiswa Informatika semester 3 yang sedang mempelajari pengembangan website.</p>
-    <nav aria-label="Navigasi utama">
-      <ul>
-        <li><a href="#tentang">Tentang</a></li>
-        <li><a href="#karya">Karya</a></li>
-        <li><a href="#kontak">Kontak</a></li>
-      </ul>
-    </nav>
+    <div class="header-baris">
+      <!-- ISI 2 — nama Anda, atau nama panggilan yang Anda pakai. -->
+      <h1>Nabil Farrely</h1>
+      <!-- ISI 3 — satu kalimat tentang diri Anda. -->
+      <p class="tagline">Mahasiswa Informatika semester 3 yang sedang mempelajari pengembangan website.</p>
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#karya">Karya</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main id="utama">
@@ -104,10 +106,10 @@
       <h2>Karya saya</h2>
       <!-- ISI 7 — tiga karya, proyek, atau hal yang pernah Anda buat.
            Boleh tugas kuliah, karya pribadi, atau hobi. -->
-      <ul>
-        <li>Halaman Kelas Terbuka Kampus — praktikum P03, HTML semantik dan form.</li>
-        <li>Proyek aplikasi kampus — tugas pengembangan aplikasi dalam perkuliahan.</li>
-        <li>Makalah kuliah - tugas penulisan dan penyusunan materi perkuliahan.</li>
+      <ul class="katalog">
+        <li class="kartu"> Halaman Kelas Terbuka Kampus — praktikum P03, HTML semantik dan form.</li>
+        <li class="kartu"> Proyek aplikasi kampus — tugas pengembangan aplikasi dalam perkuliahan.</li>
+        <li class="kartu"> Makalah kuliah - tugas penulisan dan penyusunan materi perkuliahan.</li>
       </ul>
     </section>
 
@@ -119,27 +121,30 @@
         <fieldset>
           <legend>Data pengirim</legend>
 
-          <p>
+          <p class="form-kolom">
             <label for="nama">Nama lengkap</label>
             <input id="nama" name="nama" type="text"
                    autocomplete="name" required>
+            <span class="pesan-galat">Nama lengkap wajib diisi.</span>
           </p>
 
-          <p>
+          <p class="form-kolom">
             <label for="email">Email</label>
             <input id="email" name="email" type="email"
                    autocomplete="email" required>
+            <span class="pesan-galat">Masukkan alamat email yang valid.</span>
           </p>
 
-          <p>
+          <p class="form-kolom">
             <label for="nim">NIM</label>
             <!-- ISI 8 — ganti angka di dalam pattern dengan NIM Anda sendiri. -->
             <input id="nim" name="nim" type="text" inputmode="numeric"
                    pattern="[0-9]{8}" aria-describedby="nim-bantuan" required>
-            <span id="nim-bantuan">Delapan digit angka, contoh 105230102.</span>
+            <span id="nim-bantuan">Delapan digit angka, contoh 25523145.</span>
+            <span class="pesan-galat">NIM harus terdiri dari 8 digit angka.</span>
           </p>
 
-          <p>
+          <p class="form-kolom">
             <label for="pesan">Pesan</label>
             <textarea id="pesan" name="pesan" rows="4" required></textarea>
           </p>
