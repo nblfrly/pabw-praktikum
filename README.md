@@ -26,6 +26,17 @@ Arah visual halaman profil saya: tenang dan akademik.
 
 Kriteria selesai: perubahan nilai `--color-primary` pada `tokens.css` harus dapat mengubah warna utama halaman tanpa perlu mengubah nilai warna secara langsung pada berkas CSS lainnya.
 
+### Tujuan struktur tambahan
+
+#### Tanya jawab
+Bagian Tanya jawab menggunakan elemen `<details>` dan `<summary>` untuk menampilkan pertanyaan dan jawaban yang dapat dibuka dan ditutup oleh pengguna. Bagian ini ditujukan untuk pembaca yang ingin mengetahui informasi singkat mengenai hal yang sedang saya pelajari dan alat yang saya gunakan.
+
+#### Perjalanan saya
+Bagian Perjalanan saya menggunakan elemen `<ol>` untuk menyajikan perjalanan belajar saya secara berurutan berdasarkan waktu. Bagian ini ditujukan untuk pembaca yang ingin mengetahui perkembangan studi dan pembelajaran saya dari waktu ke waktu.
+
+#### Keterampilan
+Bagian Keterampilan menggunakan elemen `<dl>`, `<dt>`, dan `<dd>` untuk menyajikan keterampilan yang sedang saya pelajari beserta penjelasannya. Bagian ini ditujukan untuk pembaca yang ingin mengetahui kemampuan dan teknologi yang sedang saya pelajari.
+
 ### Catatan penggunaan AI
 
-AI dipakai untuk membantu memahami instruksi worksheet dan memberi saran dalam pengerjaan kode. Implementasi dan  final decision halaman tetap dikerjakan dan diperiksa sendiri.
+Dalam pengerjaan Pertemuan 4, saya menggunakan ChatGPT sebagai alat bantu untuk memahami instruksi worksheet dan memberi saran dalam pengerjaan kode. Implementasi dan final decision halaman tetap dikerjakan dan diperiksa saya sendiri.
