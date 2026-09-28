@@ -39,9 +39,9 @@ nav a:hover {
 
 
 main {
-  display: flex;
-  flex-direction: column;
-  gap: var(--section-gap);  /* jarak antar bagian, tanpa margin */
+  display: grid;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6);  /* jarak antar bagian, tanpa margin */
   padding-block: var(--space-6);
 }
 
