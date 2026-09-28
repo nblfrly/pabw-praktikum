@@ -7,7 +7,7 @@ Arah visual halaman profil saya: tenang dan akademik.
 - Warna netral gelap: #13213A
 - Ukuran teks isi: 1rem
 - Ukuran judul bagian: 1.5rem
-- Ukuran judul halaman: 2.25rem
+- Ukuraån judul halaman: 2.25rem
 - Skala jarak: 0.25rem, 0.5rem, 0.75rem, 1rem, 1.5rem
 - Radius: 0.5rem
 - Bayangan: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.1)
@@ -40,3 +40,32 @@ Bagian Keterampilan menggunakan elemen `<dl>`, `<dt>`, dan `<dd>` untuk menyajik
 ### Catatan penggunaan AI
 
 Dalam pengerjaan Pertemuan 4, saya menggunakan ChatGPT sebagai alat bantu untuk memahami instruksi worksheet dan memberi saran dalam pengerjaan kode. Implementasi dan final decision halaman tetap dikerjakan dan diperiksa saya sendiri.
+
+## Pertemuan 5 — Layout Modern: Flexbox dan Grid
+
+### Rencana kerangka halaman
+
+- Baris halaman: `auto 1fr auto`
+- Kolom isi: `16rem 1fr`
+- Kepala halaman: flex
+- Isi dua kolom: grid
+- Galeri kartu: grid
+- Isi dalam kartu: flex
+
+### Sketsa kerangka halaman
+
+Kerangka halaman yang saya gunakan terdiri dari tiga baris:
+
+```text
+┌──────────────────────────────────────────────┐
+│                 HEADER                       │
+│          judul + tagline + navbar            │
+├───────────────┬──────────────────────────────┤
+│               │                              │
+│    SIDEBAR    │           KONTEN             │
+│               │                              │
+│    16rem      │             1fr              │
+│               │                              │
+├───────────────┴──────────────────────────────┤
+│                  FOOTER                      │
+└──────────────────────────────────────────────┘
