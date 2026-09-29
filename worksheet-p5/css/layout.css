@@ -70,6 +70,12 @@ section {
   padding: var(--card-pad);
 }
 
+.katalog .kartu {
+  display: grid;
+  align-content: start;
+  min-height: 14rem;
+}
+
 footer {
   margin-top: var(--space-6);
   padding-block: var(--space-4);
@@ -77,3 +83,4 @@ footer {
   color: var(--color-fg);  /* hindari abu pucat yang gagal kontras */
   font-size: var(--text-sm);
 }
+
