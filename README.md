@@ -57,18 +57,24 @@ Dalam pengerjaan Pertemuan 4, saya menggunakan ChatGPT sebagai alat bantu untuk 
 Kerangka halaman yang saya gunakan terdiri dari tiga baris:
 
 ```text
-┌──────────────────────────────────────────────┐
-│                 HEADER                       │
-│          judul + tagline + navbar            │
-├───────────────┬──────────────────────────────┤
-│               │                              │
-│    SIDEBAR    │           KONTEN             │
-│               │                              │
-│    16rem      │             1fr              │
-│               │                              │
-├───────────────┴──────────────────────────────┤
-│                  FOOTER                      │
-└──────────────────────────────────────────────┘
+┌──────────────────────────────────────────┐
+│                 HEADER                   │
+│             Nabil Farrely                │
+│     tagline + tema + NAVBAR              │
+├──────────────────────────────────────────┤
+│                  MAIN                    │
+│                KONTEN                    │
+│                                          │
+│  Tentang saya                            │
+│  Karya saya                              │
+│  Kontak                                  │
+│  Tanya jawab                             │
+│  Perjalanan                              │
+│  Keterampilan                            │
+├──────────────────────────────────────────┤
+│                 FOOTER                   │
+└──────────────────────────────────────────┘
+```
 
 ### Hasil pemeriksaan
 
@@ -81,6 +87,4 @@ Kerangka halaman yang saya gunakan terdiri dari tiga baris:
 
 ### Catatan implementasi
 
-Beberapa bagian worksheet belum diterapkan secara langsung karena struktur
-HTML yang tersedia berbeda dengan selector contoh pada worksheet. Implementasi
-yang sudah dibuat disesuaikan dengan struktur HTML Pertemuan 4.
+Beberapa bagian worksheet belum diterapkan secara langsung karena struktur HTML yang ada berbeda dengan selector contoh pada worksheet. Implementasi yang sudah dibuat disesuaikan dengan struktur HTML Pertemuan 4.
