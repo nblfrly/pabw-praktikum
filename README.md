@@ -69,3 +69,18 @@ Kerangka halaman yang saya gunakan terdiri dari tiga baris:
 ├───────────────┴──────────────────────────────┤
 │                  FOOTER                      │
 └──────────────────────────────────────────────┘
+
+### Hasil pemeriksaan
+
+- Kerangka halaman menggunakan CSS Grid.
+- Navbar menggunakan Flexbox.
+- Galeri kartu menggunakan Grid dengan `repeat(auto-fit, minmax(...))`.
+- Tidak menggunakan `float`.
+- Pengujian dilakukan pada lebar 360 px dan 1280 px.
+- Tidak ditemukan elemen yang meluber keluar kotak.
+
+### Catatan implementasi
+
+Beberapa bagian worksheet belum diterapkan secara langsung karena struktur
+HTML yang tersedia berbeda dengan selector contoh pada worksheet. Implementasi
+yang sudah dibuat disesuaikan dengan struktur HTML Pertemuan 4.
