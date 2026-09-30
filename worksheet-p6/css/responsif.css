@@ -1,0 +1,15 @@
+/* gaya dasar: berlaku untuk semua lebar */
+
+/* isi halaman satu kolom pada layar sempit */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+/* galeri kartu satu kolom pada layar sempit */
+.katalog {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
