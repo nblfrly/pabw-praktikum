@@ -27,3 +27,14 @@ main {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* tabel lebar dapat digulir sendiri */
+.table-wrap {
+  overflow-x: auto;
+}
+
+/* teks panjang tidak membuat kartu melebar */
+.kartu {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
