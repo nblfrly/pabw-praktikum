@@ -13,3 +13,17 @@ main {
   grid-template-columns: 1fr;
   gap: var(--space-4);
 }
+
+/* tablet: galeri dua kolom */
+@media (min-width: 48rem) {
+  .katalog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* desktop: galeri tiga kolom */
+@media (min-width: 60rem) {
+  .katalog {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
