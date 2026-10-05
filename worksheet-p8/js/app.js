@@ -1,7 +1,7 @@
 const profil = {
   nama: "Nabil Farrely",
   peran: "Mahasiswa Informatika",
-  keahlian: ["UI/UX", "RPL", "Web Development"],
+  keahlian: ["HTML", "CSS", "JavaScript"],
   jumlahProyek: 3,
 };
 
@@ -56,3 +56,9 @@ const formatKeahlian = (daftar) => daftar.join(" · ");
 
 console.log(buatPerkenalan(profil));
 console.log(formatKeahlian(profil.keahlian));
+
+const elemen = document.querySelector("#kelincahan");
+
+if (elemen) {
+  console.log(elemen.textContent);
+}
