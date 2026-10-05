@@ -1,9 +1,42 @@
 const profil = {
   nama: "Nabil Farrely",
   peran: "Mahasiswa Informatika",
-  keahlian: ["HTML", "CSS", "JavaScript"],
+  keahlian: ["UI/UX", "RPL", "Web Development"],
   jumlahProyek: 3,
 };
+
+const daftarProyek = [
+  {
+    judul: "Praktikum PABW", tahun: 2026, selesai: false,
+  },
+  {
+    judul: "Proyek Aplikasi Kampus", tahun: 2026, selesai: false,
+  },
+  {
+    judul: "Makalah Kuliah", tahun: 2026, selesai: true,
+  },
+];
+
+console.table(profil.keahlian);
+console.table(daftarProyek);
+
+const selesai = daftarProyek.filter((proyek) => proyek.selesai);
+console.table(selesai);
+
+const proyek = daftarProyek.find(
+  (proyek) => proyek.judul === "Proyek Aplikasi Kampus"
+);
+console.log(proyek);
+
+const judulProyek = daftarProyek.map((proyek) => proyek.judul);
+console.log(judulProyek);
+
+const urut = [...daftarProyek].sort((a, b) =>
+  a.judul.localeCompare(b.judul)
+);
+
+console.table(urut);
+console.table(daftarProyek);
 
 const kalimat = `Nama saya ${profil.nama}, saya ${profil.peran}, dan saya memiliki ${profil.jumlahProyek} proyek.`;
 
