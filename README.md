@@ -43,7 +43,7 @@ Bagian Keterampilan menggunakan elemen `<dl>`, `<dt>`, dan `<dd>` untuk menyajik
 
 ### Catatan penggunaan AI
 
-Dalam pengerjaan Pertemuan 4, saya menggunakan ChatGPT sebagai alat bantu untuk memahami instruksi worksheet dan memberi saran dalam pengerjaan kode. Implementasi dan final decision halaman tetap dikerjakan dan diperiksa saya sendiri.
+Dalam pengerjaan Pertemuan 4, saya menggunakan ChatGPT sebagai alat bantu untuk memahami instruksi worksheet dan memberi saran dalam pengerjaan kode. Implementasi dan keputusan akhir halaman tetap dikerjakan dan diperiksa saya sendiri.
 
 ## Pertemuan 5 — Layout Modern: Flexbox dan Grid
 
@@ -92,3 +92,9 @@ Kerangka halaman yang saya gunakan terdiri dari tiga baris:
 ### Catatan implementasi
 
 Beberapa bagian worksheet belum diterapkan secara langsung karena struktur HTML yang ada berbeda dengan selector contoh pada worksheet. Implementasi yang sudah dibuat disesuaikan dengan struktur HTML Pertemuan 4.
+
+## Pertemuan 8 — JavaScript Modern ES6+, Struktur Data, dan Array Methods
+
+### Catatan penggunaan AI
+
+Pada Pertemuan 8, saya menggunakan ChatGPT sebagai pendamping belajar untuk memahami konsep JavaScript, seperti variabel, object, fungsi murni, array methods, dan debugging. AI juga saya gunakan untuk membantu mencari kesalahan pada kode dan memahami hasil yang muncul di Console. Kode dan pengujian yang digunakan pada halaman saya lakukan sendiri, kemudian hasil akhirnya saya periksa kembali.
