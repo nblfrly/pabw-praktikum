@@ -56,7 +56,7 @@ input:user-invalid {
   font-size: var(--text-sm);
 }
 
-.form-kolom:has(input:user-invalid) .pesan-galat {
+.form-kolom:has([aria-invalid="true"]) .pesan-galat {
   display: block;
 }
 

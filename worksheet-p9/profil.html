@@ -128,7 +128,7 @@
       <h2>Hubungi saya</h2>
       <p>Isi formulir berikut. Semua kolom bertanda wajib harus diisi.</p>
 
-      <form action="#" method="post">
+      <form action="#" method="post" novalidate>
         <fieldset>
           <legend>Data pengirim</legend>
 
@@ -158,6 +158,7 @@
           <p class="form-kolom">
             <label for="pesan">Pesan</label>
             <textarea id="pesan" name="pesan" rows="4" required></textarea>
+            <span class="pesan-galat">Pesan wajib diisi.</span>
           </p>
 
           <button type="submit">Kirim</button>
