@@ -5,15 +5,15 @@ const profil = {
   jumlahProyek: 3,
 };
 
-const daftarProyek = [
+export const daftarProyek = [
   {
-    judul: "Praktikum PABW", tahun: 2026, selesai: false,
+    judul: "Praktikum PABW", deskripsi: "Tugas perkuliahan HTML Semantik dan CSS Responsif.", tahun: 2026, selesai: false,
   },
   {
-    judul: "Proyek Aplikasi Kampus", tahun: 2026, selesai: false,
+    judul: "Proyek Aplikasi Kampus", deskripsi: "Tugas pengembangan aplikasi dalam perkuliahan.", tahun: 2026, selesai: false,
   },
   {
-    judul: "Makalah Kuliah", tahun: 2026, selesai: true,
+    judul: "Makalah Kuliah", deskripsi: "Tugas penulisan dan penyusunan materi perkuliahan.", tahun: 2026, selesai: true,
   },
 ];
 
