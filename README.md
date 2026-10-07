@@ -98,3 +98,14 @@ Beberapa bagian worksheet belum diterapkan secara langsung karena struktur HTML 
 ### Catatan penggunaan AI
 
 Pada Pertemuan 8, saya menggunakan ChatGPT sebagai pendamping belajar untuk memahami konsep JavaScript, seperti variabel, object, fungsi murni, array methods, dan debugging. AI juga saya gunakan untuk membantu mencari kesalahan pada kode dan memahami hasil yang muncul di Console. Kode dan pengujian yang digunakan pada halaman saya lakukan sendiri, kemudian hasil akhirnya saya periksa kembali.
+
+## Pertemuan 9 — DOM, Event, dan Interaktivitas
+
+### Daftar elemen yang akan saya isi
+
+| Bagian halaman | Pemilih yang saya pakai | Diisi apa | Nama variabel |
+|---|---|---|---|
+| Daftar proyek | `#daftar` | daftar kartu proyek | `wadah` |
+| Baris tombol filter | `#filter` | tombol filter kategori | `barisFilter` |
+| Pesan daftar kosong | `#pesan-kosong` | pesan saat tidak ada proyek pada kategori yang dipilih | `kosong` |
+| Form dan tiap kolomnya | `form`, `#nama`, `#email`, `#nim`, `#pesan` | validasi input form | `form`, `inputNama`, `inputEmail`, `inputNim`, `inputPesan` |
