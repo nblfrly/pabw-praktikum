@@ -22,10 +22,38 @@ function buatKartu(proyek) {
 
 function render(data) {
   wadah.textContent = "";
+  kosong.hidden = data.length !== 0;
+
+  if (data.length === 0) {
+    return;
+  }
 
   data.forEach((proyek) => {
     wadah.append(buatKartu(proyek));
   });
 }
 
+// filter dengan event delegation
+const barisFilter = document.querySelector("#filter");
+
+barisFilter.addEventListener("click", (event) => {
+  const tombol = event.target.closest("button");
+  if (!tombol) return;
+
+  const kategori = tombol.dataset.kategori;
+
+  const terpilih = daftarProyek.filter(
+    (proyek) => kategori === "semua" || proyek.kategori === kategori
+  );
+
+  render(terpilih);
+  tandaiTombolAktif(tombol);
+});
+
 render(daftarProyek);
+
+function tandaiTombolAktif(tombolAktif) {
+  document.querySelectorAll("#filter button").forEach((tombol) => {
+    tombol.classList.toggle("aktif", tombol === tombolAktif);
+  });
+}

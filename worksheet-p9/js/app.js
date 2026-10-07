@@ -7,13 +7,13 @@ const profil = {
 
 export const daftarProyek = [
   {
-    judul: "Praktikum PABW", deskripsi: "Tugas perkuliahan HTML Semantik dan CSS Responsif.", tahun: 2026, selesai: false,
+    judul: "Praktikum PABW", deskripsi: "Tugas perkuliahan HTML Semantik dan CSS Responsif.", tahun: 2026, selesai: false, kategori: "web",
   },
   {
-    judul: "Proyek Aplikasi Kampus", deskripsi: "Tugas pengembangan aplikasi dalam perkuliahan.", tahun: 2026, selesai: false,
+    judul: "Proyek Aplikasi Kampus", deskripsi: "Tugas pengembangan aplikasi dalam perkuliahan.", tahun: 2026, selesai: false, kategori: "web",
   },
   {
-    judul: "Makalah Kuliah", deskripsi: "Tugas penulisan dan penyusunan materi perkuliahan.", tahun: 2026, selesai: true,
+    judul: "Makalah Kuliah", deskripsi: "Tugas penulisan dan penyusunan materi perkuliahan.", tahun: 2026, selesai: true, kategori: "data",
   },
 ];
 
