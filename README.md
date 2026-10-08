@@ -109,3 +109,9 @@ Pada Pertemuan 8, saya menggunakan ChatGPT sebagai pendamping belajar untuk mema
 | Baris tombol filter | `#filter` | tombol filter kategori | `barisFilter` |
 | Pesan daftar kosong | `#pesan-kosong` | pesan saat tidak ada proyek pada kategori yang dipilih | `kosong` |
 | Form dan tiap kolomnya | `form`, `#nama`, `#email`, `#nim`, `#pesan` | validasi input form | `form`, `inputNama`, `inputEmail`, `inputNim`, `inputPesan` |
+
+### Catatan penggunaan AI
+
+Pada Pertemuan 9, saya menggunakan ChatGPT untuk membantu memahami materi seperti DOM, `querySelector`, `createElement`, `textContent`, event listener, event delegation, render, filter, dan validasi form. Saya juga menggunakannya saat mengalami error untuk membantu mencari penyebab dan memahami cara memperbaikinya.
+
+Untuk penulisan kode, pengujian, pengecekan lewat Console dan DevTools, screenshot, dan hasil akhirnya tetap saya kerjakan dan cek sendiri.
