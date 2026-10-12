@@ -115,3 +115,17 @@ Pada Pertemuan 8, saya menggunakan ChatGPT sebagai pendamping belajar untuk mema
 Pada Pertemuan 9, saya menggunakan ChatGPT untuk membantu memahami materi seperti DOM, `querySelector`, `createElement`, `textContent`, event listener, event delegation, render, filter, dan validasi form. Saya juga menggunakannya saat mengalami error untuk membantu mencari penyebab dan memahami cara memperbaikinya.
 
 Untuk penulisan kode, pengujian, pengecekan lewat Console dan DevTools, screenshot, dan hasil akhirnya tetap saya kerjakan dan cek sendiri.
+
+## Pertemuan 10 — JavaScript Asinkron: Fetch, Promise, dan JSON
+
+### Hasil pengerjaan
+
+Pada Pertemuan 10, saya mempelajari cara mengambil data dari API menggunakan `fetch()`, membaca respons JSON, dan menangani proses asinkron menggunakan `async/await`. Data postingan dari JSONPlaceholder ditampilkan pada halaman profil saya dalam bentuk kartu.
+
+Pengambilan data diletakkan di `js/api.js`, sedangkan proses menampilkan data dan menangani keadaan halaman dilakukan di `js/dom.js`. Halaman diuji dalam keadaan memuat, berhasil, gagal, dan kosong.
+
+### Catatan penggunaan AI
+
+Pada Pertemuan 10, saya menggunakan ChatGPT sebagai pendamping belajar untuk membantu memahami `fetch()`, Promise, `async/await`, pembacaan JSON, dan penanganan error. AI juga saya gunakan untuk memahami instruksi worksheet dan mencari penyebab kesalahan saat pengerjaan.
+
+Saya menjalankan pengujian melalui browser dan DevTools, memeriksa respons API, serta menyesuaikan dan memeriksa hasil akhir kode pada proyek saya sendiri.
