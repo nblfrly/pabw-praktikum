@@ -1,7 +1,10 @@
 import { daftarProyek } from "./app.js";
+import { ambilNotisia } from "./api.js";
 
 const wadah = document.querySelector("#daftar");
 const kosong = document.querySelector("#pesan-kosong");
+const wadahNotisia = document.querySelector("#notisia-daftar");
+const statusNotisia = document.querySelector("#status-notisia");
 
 // B.1 – buat kartu
 function buatKartu(proyek) {
@@ -184,3 +187,45 @@ form.addEventListener("submit", (event) => {
 
   console.log("Form valid dan siap dikirim.");
 });
+
+// P10 — membuat kartu dari data API
+function gambarNotisia(daftar) {
+  wadahNotisia.textContent = "";
+
+  daftar.forEach((post) => {
+    const kartu = document.createElement("article");
+    kartu.className = "kartu";
+
+    const judul = document.createElement("h3");
+    judul.textContent = post.title;
+
+    const isi = document.createElement("p");
+    isi.textContent = post.body;
+
+    kartu.append(judul, isi);
+    wadahNotisia.append(kartu);
+  });
+}
+
+// P10 — mengambil dan menampilkan data API
+async function tampilkanNotisia() {
+  statusNotisia.textContent = "Memuat...";
+  wadahNotisia.textContent = "";
+  try {
+    const daftar = await ambilNotisia();
+
+    if (daftar.length === 0) {
+      statusNotisia.textContent = "Belum ada notisia.";
+      return;
+    }
+
+    statusNotisia.textContent = "";
+    gambarNotisia(daftar);
+  } catch (galat) {
+    wadahNotisia.textContent = "";
+    statusNotisia.textContent =
+      "Gagal memuat data: " + galat.message;
+  }
+}
+
+tampilkanNotisia();
