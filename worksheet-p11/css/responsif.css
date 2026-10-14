@@ -1,0 +1,40 @@
+/* gaya dasar: berlaku untuk semua lebar */
+
+/* isi halaman satu kolom pada layar sempit */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+/* galeri kartu satu kolom pada layar sempit */
+.katalog {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+/* tablet: galeri dua kolom */
+@media (min-width: 48rem) {
+  .katalog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* desktop: galeri tiga kolom */
+@media (min-width: 60rem) {
+  .katalog {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* tabel lebar dapat digulir sendiri */
+.table-wrap {
+  overflow-x: auto;
+}
+
+/* teks panjang tidak membuat kartu melebar */
+.kartu {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
