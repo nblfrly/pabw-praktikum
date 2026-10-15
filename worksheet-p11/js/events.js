@@ -1,4 +1,4 @@
-import { pilihKategori } from "./state.js";
+import { aturUlang, pilihKategori } from "./state.js";
 import {
   elemen,
   perbaruiTombol,
@@ -12,6 +12,10 @@ export function pasangPendengar() {
     if (!tombol) return;
 
     pilihKategori(tombol.dataset.kategori);
+  });
+
+  elemen.tombolAturUlang.addEventListener("click", () => {
+    aturUlang();
   });
 
   elemen.inputForm.forEach((input) => {

@@ -1,6 +1,7 @@
 const wadah = document.querySelector("#daftar");
 const kosong = document.querySelector("#pesan-kosong");
 const barisFilter = document.querySelector("#filter");
+const tombolAturUlang = document.querySelector("#atur-ulang");
 const form = document.querySelector("form");
 const inputNama = document.querySelector("#nama");
 const inputEmail = document.querySelector("#email");
@@ -10,6 +11,7 @@ const tombolKirim = form.querySelector('button[type="submit"]');
 
 export const elemen = {
   barisFilter,
+  tombolAturUlang,
   form,
   inputNama,
   inputEmail,

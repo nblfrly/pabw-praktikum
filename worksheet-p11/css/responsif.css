@@ -38,3 +38,36 @@ main {
   min-width: 0;
   overflow-wrap: anywhere;
 }
+
+
+/* kelompok tombol filter dan reset */
+.kontrol-proyek {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
+/* jarak antartombol kategori */
+#filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* reset tidak menambah jarak sendiri */
+#atur-ulang {
+  margin: 0;
+}
+
+/* kasih jarak tombol submit */
+form button[type="submit"] {
+  margin-top: 12px;
+}
+
+/* kasih jarak judul "Tentang saya" */
+#tentang h2 {
+  margin-bottom: 16px;
+}
