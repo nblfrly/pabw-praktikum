@@ -129,3 +129,35 @@ Pengambilan data diletakkan di `js/api.js`, sedangkan proses menampilkan data da
 Pada Pertemuan 10, saya menggunakan ChatGPT sebagai pendamping belajar untuk membantu memahami `fetch()`, Promise, `async/await`, pembacaan JSON, dan penanganan error. AI juga saya gunakan untuk memahami instruksi worksheet dan mencari penyebab kesalahan saat pengerjaan.
 
 Saya menjalankan pengujian melalui browser dan DevTools, memeriksa respons API, serta menyesuaikan dan memeriksa hasil akhir kode pada proyek saya sendiri.
+
+## Pertemuan 11 — Modul, State, dan Penyimpanan Klien
+
+### Hasil Pengerjaan
+
+Pada Pertemuan 11, saya mempelajari pemecahan kode JavaScript menjadi beberapa modul, pemisahan *state* dari tampilan, serta penyimpanan pilihan pengguna menggunakan `localStorage`.
+
+Kode halaman profil dari Pertemuan 9 dipecah menjadi beberapa modul dengan tanggung jawab yang berbeda:
+
+| Berkas | Tanggung Jawab |
+|---|---|
+| `js/data.js` | Menyimpan data proyek dan fungsi murni untuk mengolah atau memformat data. |
+| `js/state.js` | Menyimpan objek *state* dan fungsi pengubah keadaan aplikasi, termasuk `pilihKategori()` dan `aturUlang()`. |
+| `js/dom.js` | Menangani DOM, pembuatan kartu proyek, penyaringan, proses `render()`, dan pembaruan tampilan. |
+| `js/events.js` | Menangani pendengar peristiwa untuk filter dan formulir. |
+| `js/app.js` | Menjadi titik masuk aplikasi yang mengimpor modul dan menjalankan aplikasi. |
+| `js/storage.js` | Menangani penyimpanan, pembacaan, dan penghapusan pilihan menggunakan `localStorage`. |
+
+Lima modul pertama merupakan modul wajib pada Pertemuan 11. Berkas `storage.js` digunakan sebagai modul tambahan untuk menangani penyimpanan klien.
+
+Berkas `api.js` dari Pertemuan 10 diperiksa sebagai referensi, tetapi tidak digunakan pada proyek Pertemuan 11 karena implementasi halaman ini tidak memerlukan pengambilan data dari API.
+
+### Catatan Penggunaan AI
+
+Pada Pertemuan 11, saya menggunakan ChatGPT sebagai pendamping untuk membantu memahami instruksi *worksheet*, merencanakan pemecahan modul JavaScript, memisahkan *state* dari tampilan, dan menerapkan penyimpanan pilihan menggunakan `localStorage`. AI juga membantu memeriksa jika menemukan kesalahan "error" pada kode tersebut.
+
+Saya memeriksa hasil pengerjaan melalui kode, browser, dan Chrome DevTools. Pengujian yang sudah saya lakukan mencakup perubahan kategori dan pemanggilan `render(state)` berulang untuk memastikan kartu tidak terduplikasi. Saya tetap mengecek kembali hasil pengerjaan dan menyelesaikan pengujian yang belum dilakukan sebelum menyatakan pekerjaan sepenuhnya selesai.
+
+### Node.js dan npm
+
+- **Node.js:** `v24.22.0`
+- **npm:** `11.19.1`
