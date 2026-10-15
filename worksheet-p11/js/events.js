@@ -1,11 +1,9 @@
-import { state } from "./state.js";
+import { pilihKategori } from "./state.js";
 import {
   elemen,
   perbaruiTombol,
   periksaKolom,
   periksaSemuaKolom,
-  render,
-  tandaiTombolAktif,
 } from "./dom.js";
 
 export function pasangPendengar() {
@@ -13,13 +11,7 @@ export function pasangPendengar() {
     const tombol = event.target.closest("button");
     if (!tombol) return;
 
-    const kategori = tombol.dataset.kategori;
-    const terpilih = state.daftarProyek.filter(
-      (proyek) => kategori === "semua" || proyek.kategori === kategori
-    );
-
-    render(terpilih);
-    tandaiTombolAktif(tombol);
+    pilihKategori(tombol.dataset.kategori);
   });
 
   elemen.inputForm.forEach((input) => {
