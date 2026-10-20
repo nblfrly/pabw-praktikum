@@ -1,0 +1,73 @@
+/* gaya dasar: berlaku untuk semua lebar */
+
+/* isi halaman satu kolom pada layar sempit */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+/* galeri kartu satu kolom pada layar sempit */
+.katalog {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+/* tablet: galeri dua kolom */
+@media (min-width: 48rem) {
+  .katalog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* desktop: galeri tiga kolom */
+@media (min-width: 60rem) {
+  .katalog {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* tabel lebar dapat digulir sendiri */
+.table-wrap {
+  overflow-x: auto;
+}
+
+/* teks panjang tidak membuat kartu melebar */
+.kartu {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+
+/* kelompok tombol filter dan reset */
+.kontrol-proyek {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
+/* jarak antartombol kategori */
+#filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* reset tidak menambah jarak sendiri */
+#atur-ulang {
+  margin: 0;
+}
+
+/* kasih jarak tombol submit */
+form button[type="submit"] {
+  margin-top: 12px;
+}
+
+/* kasih jarak judul "Tentang saya" */
+#tentang h2 {
+  margin-bottom: 16px;
+}
