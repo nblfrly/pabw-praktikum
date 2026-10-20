@@ -161,3 +161,22 @@ Saya memeriksa hasil pengerjaan melalui kode, browser, dan Chrome DevTools. Peng
 
 - **Node.js:** `v24.22.0`
 - **npm:** `11.19.1`
+
+## Pertemuan 12 — Build Tooling, npm, dan Framework SPA
+
+### Hasil build dan preview
+
+- Hasil yang dicatat pada Lembar F: sebelum build **2,6 MB** dengan **26 request**; sesudah build **1,1 MB** dengan **6 request**.
+- Pengujian yang saya lakukan dan laporkan: build produksi serta `npm run preview` berhasil; halaman preview tampil normal dan filter serta tombol **Atur ulang pilihan** berfungsi.
+- Pemeriksaan Console setelah favicon diperbaiki tidak menunjukkan error atau warning baru.
+
+### Catatan penggunaan AI
+
+Pada Pertemuan 12, saya menggunakan ChatGPT sebagai pendamping untuk membaca worksheet, membantu memindahkan struktur halaman ke komponen Vue, menelusuri kode, dan membantu memahami masalah state serta `localStorage`.
+
+Saya sendiri meninjau proyek dan menjalankan atau mencatat pengujian manual yang dicatat di worksheet, termasuk build dan preview, perilaku filter serta tombol atur ulang, pemeriksaan Console, dan pengujian E.3–E.4. Hasil akhir tetap saya periksa kembali; bagian refleksi dan jawaban pribadi dikerjakan sendiri.
+
+### Versi perkakas
+
+- **Node.js:** `v24.22.0`
+- **npm:** `11.19.1`
