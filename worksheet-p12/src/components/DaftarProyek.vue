@@ -1,7 +1,6 @@
 <script setup>
-import { computed, inject } from 'vue'
-
-const state = inject('projectState')
+import { computed } from 'vue'
+import { state } from '../state.js'
 const proyekTampil = computed(() =>
   state.daftarProyek.filter(
     (proyek) => state.kategoriAktif === 'semua' || proyek.kategori === state.kategoriAktif,

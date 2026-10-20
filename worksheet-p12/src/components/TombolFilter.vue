@@ -1,16 +1,12 @@
 <script setup>
-import { inject } from 'vue'
+import { pilihKategori, state } from '../state.js'
 
-const state = inject('projectState')
 const kategori = [
   { nilai: 'semua', label: 'Semua' },
   { nilai: 'web', label: 'Web' },
   { nilai: 'data', label: 'Data' },
 ]
 
-function pilihKategori(nilai) {
-  state.kategoriAktif = nilai
-}
 </script>
 
 <template>

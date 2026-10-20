@@ -1,20 +1,24 @@
 <script setup>
-import { provide, reactive } from 'vue'
-import { daftarProyek, profil } from './data.js'
+import { onMounted, watch } from 'vue'
+import { profil } from './data.js'
+import { state } from './state.js'
+import { aturUlang, muat, simpan } from './simpanan.js'
 import KepalaProfil from './components/KepalaProfil.vue'
 import TombolFilter from './components/TombolFilter.vue'
 import DaftarProyek from './components/DaftarProyek.vue'
 import FormKontak from './components/FormKontak.vue'
 
-const state = reactive({
-  daftarProyek,
-  kategoriAktif: 'semua',
+onMounted(() => {
+  const isi = muat()
+  if (isi) state.kategoriAktif = isi.kategoriAktif
 })
 
-provide('projectState', state)
+watch(state, (nilai) => simpan(nilai), { deep: true })
 
 function aturUlangPilihan() {
+  aturUlang()
   state.kategoriAktif = 'semua'
+  simpan(state)
 }
 </script>
 
