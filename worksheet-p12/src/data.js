@@ -7,6 +7,7 @@ export const profil = {
 
 export const daftarProyek = [
   {
+    id: "praktikum-pabw",
     judul: "Praktikum PABW",
     deskripsi: "Tugas perkuliahan HTML Semantik dan CSS Responsif.",
     tahun: 2026,
@@ -14,6 +15,7 @@ export const daftarProyek = [
     kategori: "web",
   },
   {
+    id: "proyek-kampus",
     judul: "Proyek Aplikasi Kampus",
     deskripsi: "Tugas pengembangan aplikasi dalam perkuliahan.",
     tahun: 2026,
@@ -21,6 +23,7 @@ export const daftarProyek = [
     kategori: "web",
   },
   {
+    id: "makalah-kuliah",
     judul: "Makalah Kuliah",
     deskripsi: "Tugas penulisan dan penyusunan materi perkuliahan.",
     tahun: 2026,
